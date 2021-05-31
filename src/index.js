@@ -1,12 +1,12 @@
 import Logo from "./logo.svg";
+import "./index.css";
 
 let root;
 
 function init() {
   root = document.getElementById("root");
-  root.innerHTML = `<img src="${Logo}" alt="builder logo"/          ><h1>learning web tooling today!</h1> 
-      <button id="about">About</button>
-      <button id="contact">Contact</button>
+  root.innerHTML = `<img src="${Logo}" alt="Logo" class="logo"/><h1>vjs-starter</h1> 
+      <button id="about">Load App.js</button>
       <div id="route"></div>
       `;
 }
@@ -18,18 +18,7 @@ button.addEventListener("click", loadAbout);
 
 function loadAbout() {
   import("./App").then(({ default: App }) => {
-    const about = App({ name: "Omkar" });
+    const about = App({ name: "User" });
     document.querySelector("#route").innerHTML = about;
-  });
-}
-
-
-const buttonContact = document.querySelector("#contact");
-buttonContact.addEventListener("click", loadContact);
-
-function loadContact() {
-  import("./App").then(({ default: App }) => {
-    const contact = App({ name: "Contact Page" });
-    document.querySelector("#route").innerHTML = contact;
   });
 }
