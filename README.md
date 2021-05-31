@@ -4,7 +4,7 @@
 
 Run the following set of commands to get setup with a starter vanilla js app configured with webpack
 
-1. Clone the files using `degit` tool\
+1. Clone the files using the [degit](https://github.com/Rich-Harris/degit) tool\
    `npx degit OmkarArora/vjs-starter#dev your-project-name`
 
 2. Move to the project directory\
