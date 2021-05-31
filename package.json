@@ -1,5 +1,5 @@
 {
-	"name": "pure-js-app-starter",
+	"name": "vjs-starter",
 	"version": "1.0.0",
 	"description": "Get vanillaJS apps written with modern tools",
 	"main": "index.js",
@@ -14,7 +14,7 @@
 		"build": "webpack",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "Tanay Pratap",
+	"author": "Omkar Arora",
 	"license": "MIT",
 	"devDependencies": {
 		"@babel/core": "^7.14.2",
@@ -22,10 +22,10 @@
 		"babel-loader": "^8.2.2",
 		"css-loader": "^5.2.4",
 		"html-webpack-plugin": "^5.3.1",
-		"lodash": "^4.17.21",
 		"style-loader": "^2.0.0",
 		"webpack": "^5.37.0",
 		"webpack-cli": "^4.7.0",
 		"webpack-dev-server": "^3.11.2"
-	}
+	},
+	"dependencies": {}
 }
